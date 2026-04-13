@@ -36,7 +36,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "dotnet restore",
-	"onCreateCommand": "curl -sSL https://aspire.dev/install.sh | bash -s -- -q dev && dotnet nuget locals all --clear",
+	"onCreateCommand": "curl -sSL https://aspire.dev/install.sh | bash -s -- -q dev",
 	"postStartCommand": "dotnet dev-certs https --trust",
 	"customizations": {
 		"vscode": {
