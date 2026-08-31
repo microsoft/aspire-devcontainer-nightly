@@ -2,8 +2,8 @@
 
 This is a repository template to streamline the process of getting started with Aspire using Devontainers in both Visual Studio Code and GitHub Codespaces. Please refer to our product documentation on how to use these repository templates to get started.
 
-- [Aspire and GitHub Codespaces](https://aspire.dev/docs/get-started/github-codespaces)
-- [Aspire and Visual Studio Code Dev Containers](https://aspire.dev/docs/get-started/dev-containers)
+- [Use Aspire with GitHub Codespaces](https://aspire.dev/get-started/github-codespaces/)
+- [Dev Containers in Visual Studio Code](https://aspire.dev/get-started/dev-containers/)
 
 > NOTE: Once you have created your repository from this template please remember to review the included files such as `LICENSE`, `CODE_OF_CONDUCT.md`, `SECURITY.md` and this `README.md` file to ensure they are appropriate for your circumstances.
 
