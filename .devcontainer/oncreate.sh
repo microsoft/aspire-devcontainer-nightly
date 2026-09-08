@@ -28,7 +28,11 @@ for attempt in $(seq 1 "$MAX_ATTEMPTS"); do
     sleep "$RETRY_DELAY"
 done
 
-echo "Clearing NuGet cache to reduce prebuild template size..."
-dotnet nuget locals all --clear
+if command -v dotnet >/dev/null 2>&1; then
+    echo "Clearing NuGet cache to reduce prebuild template size..."
+    dotnet nuget locals all --clear
+else
+    echo "Standalone .NET SDK not installed; skipping NuGet cache cleanup."
+fi
 
 echo "onCreateCommand completed successfully."
