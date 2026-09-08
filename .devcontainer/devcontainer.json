@@ -30,7 +30,7 @@
 		"storage": "64gb"
 	},
 	"remoteEnv": {
-		"PATH": "/home/vscode/.aspire/bin:${containerEnv:PATH}",
+		"PATH": "/home/vscode/.aspire/bin:/home/vscode/.dotnet/tools:${containerEnv:PATH}",
 		"SSL_CERT_DIR": "/usr/lib/ssl/certs:/home/vscode/.aspnet/dev-certs/trust"
 	},
 	"onCreateCommand": "bash .devcontainer/oncreate.sh",

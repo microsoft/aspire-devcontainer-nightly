@@ -26,6 +26,8 @@ for (const withoutDotnet of [false, true]) {
     }
     const actual = JSON.parse(readFileSync(output, 'utf8'));
     assert.deepEqual(actual, expected);
+    assert.ok(actual.remoteEnv.PATH.split(':').includes('/home/vscode/.dotnet/tools'),
+      'Global .NET tools must remain on the remote PATH.');
     assert.ok(existsSync(actual.build.dockerfile));
     assert.ok(existsSync(actual.build.context));
     assert.equal(readFileSync(source, 'utf8'), original);
